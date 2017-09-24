@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:DemoExpanderContentSizingIssue"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml">
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -6,7 +6,33 @@
         xmlns:local="clr-namespace:DemoExpanderContentSizingIssue"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+            <Expander Header="This is the problem" Grid.Column="0">
+                <ScrollViewer>
+                    <Grid>
+                        <TextBlock TextWrapping="Wrap">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus faucibus, nulla eu efficitur sollicitudin, velit metus egestas libero, a dictum metus ipsum eu justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sit amet ornare neque, a tincidunt ipsum. Pellentesque in velit sed massa blandit blandit. Suspendisse egestas sit amet elit vitae dignissim. Duis turpis augue, tincidunt eu augue eu, convallis vehicula libero. Curabitur lorem ante, mattis in lectus in, fringilla sollicitudin orci. Duis ac nunc vel elit accumsan posuere. Aliquam sed pharetra lectus, sit amet pretium libero.
+
+Maecenas ligula nulla, lacinia ut nibh in, cursus dapibus neque. Morbi iaculis leo sem, non convallis mauris congue id. Proin augue diam, auctor quis eleifend at, faucibus eget nulla. Aenean diam arcu, vestibulum vitae tortor nec, fermentum porttitor lorem. Integer in elit id justo auctor interdum id vel dui. Etiam sodales a mi non semper. Nullam mollis velit sed facilisis interdum. Nunc sapien quam, rhoncus at tempor sit amet, cursus in leo. Aliquam interdum orci nec felis egestas, in ullamcorper mi hendrerit. Sed neque dui, rhoncus auctor tincidunt a, cursus quis nisl. Proin ultrices orci tempor felis tempor faucibus. Aliquam ut consectetur urna. Duis tincidunt, est nec placerat viverra, urna ligula pellentesque erat, nec volutpat mi velit sed nunc. Cras pharetra ullamcorper orci id porttitor.
+
+Mauris fringilla, nibh at lobortis volutpat, dui magna sagittis mi, eu sodales libero lacus in diam. Pellentesque bibendum scelerisque purus tempor rutrum. Nam finibus, nulla a volutpat sollicitudin, urna odio varius sapien, non viverra risus dui ut urna. Duis ultricies in elit eget vulputate. Nulla ac tincidunt nulla. Quisque non sapien nec mauris tincidunt ultrices. Aliquam eu imperdiet leo. Nulla hendrerit, lorem sed condimentum faucibus, arcu risus maximus arcu, eu accumsan felis mi quis metus. Proin varius nisl a tempor feugiat. Vivamus suscipit est est, eget lacinia tellus egestas eget.
+
+Sed bibendum a erat nec sagittis. Aliquam erat volutpat. Vestibulum id turpis dignissim, facilisis metus vel, tempus urna. Quisque rutrum dignissim posuere. Nulla dapibus interdum velit, nec rutrum tortor. Suspendisse potenti. Aliquam in sem quis erat vestibulum eleifend. Pellentesque ut arcu bibendum, lobortis turpis ut, faucibus velit. Proin nec molestie risus. Maecenas ut elit convallis, feugiat turpis quis, porttitor mi. Pellentesque lobortis magna leo, a maximus justo tempor quis. Cras fermentum sem felis. Sed eleifend, nulla non lacinia consectetur, nisl lorem blandit sapien, id eleifend lacus tellus et ipsum. Sed vitae tincidunt arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In quis imperdiet lectus, eget bibendum arcu.
+
+Sed sagittis convallis dui, ultrices iaculis odio sagittis at. Morbi et egestas turpis. Suspendisse porttitor sed lacus at cursus. Duis elit ipsum, ullamcorper at blandit ut, viverra eget nisi. Nunc sem sapien, efficitur a dolor ac, malesuada tristique ligula. Morbi id ante non eros iaculis dignissim. Quisque in purus eget sem sodales interdum. Suspendisse mi lacus, feugiat eget metus id, interdum sagittis urna. Sed sed lectus justo. Integer ac velit orci. Quisque eget venenatis eros, vitae porttitor tortor. Ut ante erat, facilisis a laoreet id, vehicula et purus. Donec justo nunc, finibus quis enim id, fringilla dictum justo. Quisque vel semper massa.
+                        </TextBlock>
+                    </Grid>
+                </ScrollViewer>
+        </Expander>
+        <TextBlock TextWrapping="Wrap" Grid.Column="1">
+                    Removing MaterialDesign from app.xml will show the scrollviewer working inside of an expander correctly.
+        </TextBlock>
     </Grid>
 </Window>
